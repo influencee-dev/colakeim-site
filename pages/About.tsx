@@ -11,7 +11,7 @@ export const AboutPage: React.FC = () => {
            <span className="text-brand-red text-xs font-bold tracking-[0.2em] uppercase mb-4 block">La Nostra Storia</span>
            <h1 className="font-serif text-5xl md:text-6xl mb-8">Artigiani del Bello sul Lago di Como</h1>
            <p className="text-gray-300 text-lg font-light leading-relaxed max-w-2xl mx-auto">
-             Colakeim nasce dalla passione per l'architettura d'interni e dalla volontà di portare l'eccellenza artigianale nelle dimore più esclusive del Lario.
+             CO LAKE IM nasce dalla passione per l'architettura d'interni e dalla volontà di portare l'eccellenza artigianale nelle dimore più esclusive del Lario.
            </p>
         </div>
       </div>
@@ -20,7 +20,7 @@ export const AboutPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-               <img src="https://picsum.photos/id/433/800/1000" alt="Il nostro team al lavoro" className="w-full h-auto shadow-xl" />
+               <img src="https://images.unsplash.com/photo-1542626040-27a3c737841f?auto=format&fit=crop&w=800&q=80" alt="Il nostro team di architetti" className="w-full h-auto shadow-xl" />
             </div>
             <div>
                <h2 className="font-serif text-4xl text-gray-900 mb-6">Tradizione e Innovazione</h2>

@@ -5,7 +5,7 @@ export const Newsletter: React.FC = () => {
     <section className="relative py-32 bg-neutral-800 overflow-hidden">
        {/* Subtle background texture/image overlay */}
        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <img src="https://picsum.photos/id/249/1920/1080" className="w-full h-full object-cover grayscale" />
+          <img src="https://images.unsplash.com/photo-1486718448732-480f75d79fa5?auto=format&fit=crop&w=1920&q=80" className="w-full h-full object-cover grayscale" alt="Abstract background" />
        </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">

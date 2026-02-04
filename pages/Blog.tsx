@@ -17,7 +17,7 @@ const posts: BlogPost[] = [
     excerpt: 'Quanto costa ristrutturare un appartamento a Como? Una disamina completa dei costi, dei permessi necessari e delle tempistiche.',
     category: 'Guide',
     date: '12 Ott 2024',
-    image: 'https://picsum.photos/id/433/800/600',
+    image: 'https://images.unsplash.com/photo-1590490360182-f33db1395c73?auto=format&fit=crop&w=800&q=80',
     slug: '/blog/guida-ristrutturazioni'
   },
   {
@@ -25,7 +25,7 @@ const posts: BlogPost[] = [
     excerpt: 'Tendenze 2025: minimalismo materico, colori della terra e illuminazione integrata. Scopri come valorizzare i tuoi spazi.',
     category: 'Inspirazione',
     date: '28 Set 2024',
-    image: 'https://picsum.photos/id/366/800/600',
+    image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80',
     slug: '/blog/idee-arredo-interni'
   },
   {
@@ -33,7 +33,7 @@ const posts: BlogPost[] = [
     excerpt: 'Confronto tecnico tra i due materiali più richiesti del momento. Pro e contro per pavimenti e rivestimenti bagno.',
     category: 'Tecnica',
     date: '15 Set 2024',
-    image: 'https://picsum.photos/id/1070/800/600',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
     slug: '/blog/materiali-finiture'
   },
   {
@@ -41,7 +41,7 @@ const posts: BlogPost[] = [
     excerpt: 'Le sfide logistiche e i vincoli paesaggistici del Lario. Perché affidarsi a un\'impresa locale è fondamentale.',
     category: 'Territorio',
     date: '02 Set 2024',
-    image: 'https://picsum.photos/id/1011/800/600',
+    image: 'https://images.unsplash.com/photo-1516455590571-fb25f8569456?auto=format&fit=crop&w=800&q=80',
     slug: '/blog/ristrutturazioni-lago-di-como'
   }
 ];

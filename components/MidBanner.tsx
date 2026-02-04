@@ -7,8 +7,8 @@ export const MidBanner: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/id/155/1920/1080" 
-          alt="Renovation Background" 
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80" 
+          alt="Renovation Planning" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-neutral-900/70"></div>

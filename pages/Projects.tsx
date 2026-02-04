@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MidBanner } from '../components/MidBanner';
 import { Link } from 'react-router-dom';
+import { ImageGallery } from '../components/ui/ImageGallery';
 
 interface Project {
   id: number;
@@ -17,7 +18,7 @@ const projects: Project[] = [
     category: 'Residenziale',
     title: 'Villa Liberty Restyling',
     location: 'Bellagio',
-    image: 'https://picsum.photos/id/1011/800/1200',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
     size: '350 mq'
   },
   {
@@ -25,7 +26,7 @@ const projects: Project[] = [
     category: 'Hotel',
     title: 'Grand Hotel Tremezzo Suite',
     location: 'Tremezzina',
-    image: 'https://picsum.photos/id/164/800/600',
+    image: 'https://images.unsplash.com/photo-1590490360182-f33db1395c73?auto=format&fit=crop&w=800&q=80',
     size: '120 mq'
   },
   {
@@ -33,7 +34,7 @@ const projects: Project[] = [
     category: 'Commerciale',
     title: 'Boutique Showroom Seta',
     location: 'Como Centro',
-    image: 'https://picsum.photos/id/180/800/1000',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
     size: '200 mq'
   },
   {
@@ -41,7 +42,7 @@ const projects: Project[] = [
     category: 'Residenziale',
     title: 'Attico Vista Lago',
     location: 'Cernobbio',
-    image: 'https://picsum.photos/id/201/800/800',
+    image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80',
     size: '180 mq'
   },
   {
@@ -49,7 +50,7 @@ const projects: Project[] = [
     category: 'Residenziale',
     title: 'Loft Industriale',
     location: 'Lecco',
-    image: 'https://picsum.photos/id/366/800/600',
+    image: 'https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=80',
     size: '140 mq'
   },
   {
@@ -57,9 +58,19 @@ const projects: Project[] = [
     category: 'Hotel',
     title: 'Lounge Bar Resort',
     location: 'Menaggio',
-    image: 'https://picsum.photos/id/433/800/1000',
+    image: 'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?auto=format&fit=crop&w=800&q=80',
     size: '300 mq'
   }
+];
+
+// High quality detail images
+const detailImages = [
+    "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1581094741842-7bc49ba47b3b?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1599696847727-920002722d84?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1574359411659-15573a21bc2c?auto=format&fit=crop&w=800&q=80"
 ];
 
 export const ProjectsPage: React.FC = () => {
@@ -122,6 +133,11 @@ export const ProjectsPage: React.FC = () => {
                </div>
             ))}
          </div>
+      </div>
+
+      {/* New Gallery Section */}
+      <div className="max-w-7xl mx-auto px-6 pb-16">
+         <ImageGallery images={detailImages} title="Dettagli di Cantiere" />
       </div>
 
       <div className="bg-gray-50 py-16 text-center px-6">

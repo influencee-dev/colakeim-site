@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Button } from '../components/ui/Button';
 import { Link, useLocation } from 'react-router-dom';
+import { ImageGallery } from '../components/ui/ImageGallery';
 
 interface SEOContentProps {
   title: string;
@@ -25,7 +26,7 @@ export const SEOContent: React.FC<SEOContentProps> = ({
 
   // Dynamic SEO Metadata Update
   useEffect(() => {
-    document.title = `${title} | Colakeim Ristrutturazioni`;
+    document.title = `${title} | CO LAKE IM Ristrutturazioni`;
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -47,6 +48,16 @@ export const SEOContent: React.FC<SEOContentProps> = ({
     const label = segment.replace(/-/g, ' ');
     return { path, label };
   });
+
+  // Real interior design gallery images
+  const galleryImages = [
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1595515106967-1b07d57077a2?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
+  ];
 
   return (
     <div className="bg-white min-h-screen pt-20">
@@ -93,7 +104,7 @@ export const SEOContent: React.FC<SEOContentProps> = ({
                     {isArticle ? 'Articolo Blog' : 'Servizio Esclusivo'}
                 </span>
                 <h2 className="font-serif text-3xl text-gray-900 mb-8 border-l-4 border-brand-red pl-6 leading-tight">
-                    {isArticle ? title : `L'Eccellenza Colakeim ${location ? `a ${location}` : ''}`}
+                    {isArticle ? title : `L'Eccellenza CO LAKE IM ${location ? `a ${location}` : ''}`}
                 </h2>
                 
                 <article className="prose prose-lg text-gray-600 font-light leading-relaxed text-justify">
@@ -103,7 +114,7 @@ export const SEOContent: React.FC<SEOContentProps> = ({
                     
                     <p className="mb-6">
                         In un contesto come quello del {location || 'Lago di Como'}, dove l'estetica si fonde con la storia, ogni intervento di ristrutturazione deve rispettare canoni precisi. 
-                        Noi di <strong>Colakeim</strong> uniamo la maestria artigiana alle più moderne tecnologie edili per offrire risultati che durano nel tempo.
+                        Noi di <strong>CO LAKE IM</strong> uniamo la maestria artigiana alle più moderne tecnologie edili per offrire risultati che durano nel tempo.
                     </p>
 
                     {!isArticle && (
@@ -124,6 +135,11 @@ export const SEOContent: React.FC<SEOContentProps> = ({
                                     </li>
                                 ))}
                             </ul>
+
+                            {/* New Gallery Component */}
+                            <div className="mt-12 border-t border-gray-100 pt-12">
+                                <ImageGallery images={galleryImages} title="Dettagli e Ispirazioni" />
+                            </div>
                         </>
                     )}
 

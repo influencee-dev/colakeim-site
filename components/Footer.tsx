@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
           
           {/* Column 1 */}
           <div>
-            <h4 className="text-white text-xs font-bold tracking-widest uppercase mb-6">Colakeim</h4>
+            <h4 className="text-white text-xs font-bold tracking-widest uppercase mb-6">CO LAKE IM</h4>
             <ul className="space-y-4 text-sm font-light">
               <li><a href="#" className="hover:text-white transition-colors">Chi siamo</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Metodo di Lavoro</a></li>
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-           <p>&copy; All rights reserved 2025 — Colakeim S.r.l.</p>
+           <p>&copy; All rights reserved 2025 — CO LAKE IM S.r.l.</p>
            <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white">Privacy Policy</a>
               <a href="#" className="hover:text-white">Cookie Policy</a>
