@@ -49,18 +49,17 @@ export const Services: React.FC = () => {
           {/* Right Image Grid */}
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <ServiceCard 
-              img="/cli15.jpeg" 
+              img="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" 
               title="Cartongesso & Illuminotecnica" 
               subtitle="Volume"
             />
             <ServiceCard 
-              img="/cli12.jpeg" 
+              img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
               title="Resine e Superfici Continue" 
               subtitle="Materia"
             />
             <ServiceCard 
-              // New premium marble/decorative effect image
-              img="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" 
+              img="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" 
               title="Effetti Decorativi e Marmi" 
               subtitle="Dettaglio"
             />

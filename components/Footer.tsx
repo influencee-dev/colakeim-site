@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
@@ -15,9 +15,15 @@ export const Footer: React.FC = () => {
                Eccellenza nelle ristrutturazioni d'interni sul Lago di Como. Design su misura e maestria artigianale per ogni tipologia di immobile.
             </p>
              <div className="flex space-x-4 text-white">
-                <a href="#" className="hover:text-brand-red transition-colors"><Facebook size={18}/></a>
-                <a href="#" className="hover:text-brand-red transition-colors"><Instagram size={18}/></a>
-                <a href="#" className="hover:text-brand-red transition-colors"><Linkedin size={18}/></a>
+                <a 
+                  href="https://www.instagram.com/co_lake_im_srl/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-brand-red transition-colors flex items-center gap-2"
+                >
+                  <Instagram size={18}/>
+                  <span className="text-[10px] uppercase tracking-widest font-bold">Instagram</span>
+                </a>
              </div>
           </div>
 
