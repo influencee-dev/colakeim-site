@@ -17,13 +17,14 @@ const ServiceCard = ({ title, desc, img }: { title: string, desc: string, img: s
 );
 
 export const ServicesPage: React.FC = () => {
+  // Before/After selection using client images
   const beforeAfterImages = [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1595515106967-1b07d57077a2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
+      "/cli7.jpg",
+      "/cli8.jpg",
+      "/cli9.jpg",
+      "/cli11.jpg",
+      "/cli12.jpg",
+      "/cli13.jpg"
   ];
 
   return (
@@ -40,28 +41,28 @@ export const ServicesPage: React.FC = () => {
             </div>
         </div>
 
-        {/* 4 Main Services Grid */}
+        {/* 4 Main Services Grid - Using client samples for cards */}
         <section className="max-w-7xl mx-auto px-6 py-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <ServiceCard 
                     title="Ristrutturazioni interne"
                     desc="Bagni, cucine, appartamenti e locali commerciali chiavi in mano. Gestiamo l'intero processo per garantirti un risultato perfetto senza stress."
-                    img="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                    img="/cli14.jpg"
                 />
                 <ServiceCard 
                     title="Cartongesso & controsoffitti"
                     desc="Soluzioni su misura per dividere, illuminare e valorizzare gli spazi. Creiamo volumi architettonici che trasformano l'estetica degli ambienti."
-                    img="https://images.unsplash.com/photo-1594422634611-29438cb2c8e1?auto=format&fit=crop&w=800&q=80"
+                    img="/cli15.jpg"
                 />
                 <ServiceCard 
                     title="Pavimenti e rivestimenti"
                     desc="Resina, parquet, piastrelle e superfici decorative. Selezioniamo solo i migliori materiali per superfici durature e di alto design."
-                    img="https://images.unsplash.com/photo-1516455590571-fb25f8569456?auto=format&fit=crop&w=800&q=80"
+                    img="/cli12.jpg"
                 />
                 <ServiceCard 
                     title="Effetti decorativi e finiture"
                     desc="Pareti moderne, texture materiche e design contemporaneo. Diamo carattere ai tuoi muri con tecniche artigianali d'avanguardia."
-                    img="https://images.unsplash.com/photo-1615529123000-ad69299ebf47?auto=format&fit=crop&w=800&q=80"
+                    img="/cli11.jpg"
                 />
             </div>
         </section>
