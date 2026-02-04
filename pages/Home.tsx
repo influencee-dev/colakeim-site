@@ -7,14 +7,14 @@ import { ImageGallery } from '../components/ui/ImageGallery';
 import { Button } from '../components/ui/Button';
 
 export const HomePage: React.FC = () => {
-  // Selection of client images for the homepage carousel
+  // Selection of client images for the homepage carousel with correct .jpeg extension
   const previewGallery = [
-    "/cli1.jpg",
-    "/cli2.jpg",
-    "/cli3.jpg",
-    "/cli4.jpg",
-    "/cli5.jpg",
-    "/cli6.jpg"
+    "/cli1.jpeg",
+    "/cli2.jpeg",
+    "/cli3.jpeg",
+    "/cli4.jpeg",
+    "/cli5.jpeg",
+    "/cli6.jpeg"
   ];
 
   return (
@@ -39,7 +39,7 @@ export const HomePage: React.FC = () => {
       {/* 3. Servizi (Anteprima) */}
       <Services />
 
-      {/* 4. Row Chi Siamo (Anteprima) - Using cli10.jpg */}
+      {/* 4. Row Chi Siamo (Anteprima) - Using cli10.jpeg */}
       <section className="bg-neutral-900 py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -56,7 +56,7 @@ export const HomePage: React.FC = () => {
                  </Link>
               </div>
               <div className="relative">
-                 <img src="/cli10.jpg" alt="CO LAKE IM Team - Lavorazioni su misura" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl" />
+                 <img src="/cli10.jpeg" alt="CO LAKE IM Team - Lavorazioni su misura" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl" />
                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-red hidden lg:flex items-center justify-center p-4 text-center">
                     <span className="text-white text-[10px] font-bold tracking-tighter uppercase leading-none">Qualità Certificata</span>
                  </div>

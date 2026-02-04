@@ -2,23 +2,23 @@ import React from 'react';
 import { ImageGallery } from '../components/ui/ImageGallery';
 
 export const GalleryPage: React.FC = () => {
-  // Full list of client images cli1 to cli15
+  // Full list of client images cli1 to cli15 with correct .jpeg extension
   const portfolioImages = [
-    "/cli1.jpg",
-    "/cli2.jpg",
-    "/cli3.jpg",
-    "/cli4.jpg",
-    "/cli5.jpg",
-    "/cli6.jpg",
-    "/cli7.jpg",
-    "/cli8.jpg",
-    "/cli9.jpg",
-    "/cli11.jpg",
-    "/cli12.jpg",
-    "/cli13.jpg",
-    "/cli14.jpg",
-    "/cli15.jpg",
-    "/cli10.jpg" // Added for completeness
+    "/cli1.jpeg",
+    "/cli2.jpeg",
+    "/cli3.jpeg",
+    "/cli4.jpeg",
+    "/cli5.jpeg",
+    "/cli6.jpeg",
+    "/cli7.jpeg",
+    "/cli8.jpeg",
+    "/cli9.jpeg",
+    "/cli11.jpeg",
+    "/cli12.jpeg",
+    "/cli13.jpeg",
+    "/cli14.jpeg",
+    "/cli15.jpeg",
+    "/cli10.jpeg"
   ];
 
   return (

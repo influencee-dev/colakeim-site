@@ -17,14 +17,14 @@ const ServiceCard = ({ title, desc, img }: { title: string, desc: string, img: s
 );
 
 export const ServicesPage: React.FC = () => {
-  // Before/After selection using client images
+  // Before/After selection using client images with .jpeg
   const beforeAfterImages = [
-      "/cli7.jpg",
-      "/cli8.jpg",
-      "/cli9.jpg",
-      "/cli11.jpg",
-      "/cli12.jpg",
-      "/cli13.jpg"
+      "/cli7.jpeg",
+      "/cli8.jpeg",
+      "/cli9.jpeg",
+      "/cli11.jpeg",
+      "/cli12.jpeg",
+      "/cli13.jpeg"
   ];
 
   return (
@@ -33,7 +33,7 @@ export const ServicesPage: React.FC = () => {
         {/* Header Hero */}
         <div className="bg-neutral-900 pt-24 pb-20 px-6 text-center">
             <div className="max-w-4xl mx-auto">
-                <span className="text-brand-red text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Cosa Facciamo</span>
+                <span className="text-brand-red text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Cosa Facciamo</span>
                 <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 leading-tight">Servizi Edili d'Eccellenza</h1>
                 <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed">
                    Dall'idea al cantiere finito: CO LAKE IM trasforma i vostri spazi con maestria artigianale e soluzioni tecnologiche innovative.
@@ -41,28 +41,28 @@ export const ServicesPage: React.FC = () => {
             </div>
         </div>
 
-        {/* 4 Main Services Grid - Using client samples for cards */}
+        {/* 4 Main Services Grid - Using client samples for cards with .jpeg */}
         <section className="max-w-7xl mx-auto px-6 py-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <ServiceCard 
                     title="Ristrutturazioni interne"
                     desc="Bagni, cucine, appartamenti e locali commerciali chiavi in mano. Gestiamo l'intero processo per garantirti un risultato perfetto senza stress."
-                    img="/cli14.jpg"
+                    img="/cli14.jpeg"
                 />
                 <ServiceCard 
                     title="Cartongesso & controsoffitti"
                     desc="Soluzioni su misura per dividere, illuminare e valorizzare gli spazi. Creiamo volumi architettonici che trasformano l'estetica degli ambienti."
-                    img="/cli15.jpg"
+                    img="/cli15.jpeg"
                 />
                 <ServiceCard 
                     title="Pavimenti e rivestimenti"
                     desc="Resina, parquet, piastrelle e superfici decorative. Selezioniamo solo i migliori materiali per superfici durature e di alto design."
-                    img="/cli12.jpg"
+                    img="/cli12.jpeg"
                 />
                 <ServiceCard 
                     title="Effetti decorativi e finiture"
                     desc="Pareti moderne, texture materiche e design contemporaneo. Diamo carattere ai tuoi muri con tecniche artigianali d'avanguardia."
-                    img="/cli11.jpg"
+                    img="/cli11.jpeg"
                 />
             </div>
         </section>

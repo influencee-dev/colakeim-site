@@ -20,7 +20,7 @@ export const AboutPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-               <img src="/cli10.jpg" alt="CO LAKE IM - Artigianato e Passione" className="w-full h-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" />
+               <img src="/cli10.jpeg" alt="CO LAKE IM - Artigianato e Passione" className="w-full h-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" />
             </div>
             <div>
                <h2 className="font-serif text-4xl text-gray-900 mb-6">Tradizione e Innovazione</h2>
