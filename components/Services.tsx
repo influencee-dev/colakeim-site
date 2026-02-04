@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ img, title, subtitle }: { img: string, title: string, subtitle: string }) => (
   <div className="flex flex-col group cursor-pointer">
@@ -37,28 +38,29 @@ export const Services: React.FC = () => {
               Dalla ridefinizione dei volumi in cartongesso alle finiture materiche in resina, 
               ogni nostro intervento è una ricerca ossessiva della perfezione estetica.
             </p>
-            <div className="group inline-flex items-center gap-4 cursor-pointer">
+            <Link to="/servizi" className="group inline-flex items-center gap-4 cursor-pointer w-fit">
               <span className="text-gray-900 text-xs font-bold tracking-widest uppercase border-b-2 border-brand-red pb-1 group-hover:bg-brand-red group-hover:text-white group-hover:px-2 transition-all">
                 TUTTI I SERVIZI
               </span>
               <span className="text-brand-red group-hover:translate-x-2 transition-transform">&rarr;</span>
-            </div>
+            </Link>
           </div>
 
           {/* Right Image Grid */}
           <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <ServiceCard 
-              img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+              img="/cli15.jpeg" 
               title="Cartongesso & Illuminotecnica" 
               subtitle="Volume"
             />
             <ServiceCard 
-              img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" 
+              img="/cli12.jpeg" 
               title="Resine e Superfici Continue" 
               subtitle="Materia"
             />
             <ServiceCard 
-              img="https://images.unsplash.com/photo-1615529123000-ad69299ebf47?auto=format&fit=crop&w=800&q=80" 
+              // New premium marble/decorative effect image
+              img="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" 
               title="Effetti Decorativi e Marmi" 
               subtitle="Dettaglio"
             />

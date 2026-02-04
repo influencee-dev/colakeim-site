@@ -1,7 +1,6 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
 import { Services } from '../components/Services';
-import { Newsletter } from '../components/Newsletter';
 import { Link } from 'react-router-dom';
 import { ImageGallery } from '../components/ui/ImageGallery';
 import { Button } from '../components/ui/Button';
@@ -81,19 +80,17 @@ export const HomePage: React.FC = () => {
 
       {/* 6. Row CTA Preventivo */}
       <section className="bg-neutral-800 py-24 px-6 border-t border-gray-700">
-         <div className="max-w-4xl mx-auto text-center">
+         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
             <h2 className="font-serif text-4xl md:text-6xl text-white mb-8">Hai un progetto in mente?</h2>
-            <p className="text-gray-300 text-lg mb-12 font-light">
+            <p className="text-gray-300 text-lg mb-12 font-light max-w-2xl">
                Contattaci oggi stesso per un sopralluogo gratuito e un preventivo dettagliato. 
                Diamo forma ai tuoi sogni con serietà e precisione.
             </p>
-            <Link to="/contatti">
+            <Link to="/contatti" className="inline-block">
                <Button className="!py-6 !px-16 text-sm">RICHIEDI PREVENTIVO GRATUITO &rarr;</Button>
             </Link>
          </div>
       </section>
-
-      <Newsletter />
     </div>
   );
 };
