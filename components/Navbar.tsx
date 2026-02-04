@@ -1,24 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location]);
 
   const navLinks = [
     { label: 'HOME', href: '/' },
@@ -29,9 +16,7 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-neutral-900/95 py-4 shadow-lg' : 'bg-transparent py-6'}`}
-    >
+    <nav className="fixed top-0 left-0 w-full z-50 bg-neutral-900 py-4 shadow-xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* Logo */}
@@ -46,7 +31,7 @@ export const Navbar: React.FC = () => {
               <li key={link.label}>
                 <Link 
                   to={link.href} 
-                  className={`text-[11px] font-bold tracking-widest uppercase transition-colors ${location.pathname === link.href ? 'text-brand-red' : 'text-gray-200 hover:text-white'}`}
+                  className={`text-[11px] font-bold tracking-widest uppercase transition-colors ${location.pathname === link.href ? 'text-brand-red' : 'text-gray-300 hover:text-white'}`}
                 >
                   {link.label}
                 </Link>
@@ -54,7 +39,7 @@ export const Navbar: React.FC = () => {
             ))}
           </ul>
           <Link to="/contatti">
-            <Button variant="primary" className="!py-2 !px-6">PREVENTIVO</Button>
+            <Button variant="primary" className="!py-2 !px-6 text-[10px]">PREVENTIVO</Button>
           </Link>
         </div>
 
@@ -71,13 +56,14 @@ export const Navbar: React.FC = () => {
             <Link 
               key={link.label} 
               to={link.href} 
+              onClick={() => setIsMobileMenuOpen(false)}
               className="text-white text-2xl font-serif tracking-widest uppercase hover:text-brand-red transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <Link to="/contatti" className="pt-4">
-             <Button className="!px-12">SCRIVICI</Button>
+          <Link to="/contatti" onClick={() => setIsMobileMenuOpen(false)} className="pt-4">
+             <Button className="!px-12">PREVENTIVO GRATUITO</Button>
           </Link>
         </div>
       </div>

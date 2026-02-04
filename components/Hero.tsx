@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/Button';
+import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => {
   return (
@@ -30,18 +31,22 @@ export const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 animate-in fade-in duration-1000 delay-500">
-             <Button variant="primary" className="!px-10 !py-4 text-sm">
-                I NOSTRI PROGETTI &rarr;
-             </Button>
-             <Button variant="outline" className="!px-10 !py-4 text-sm">
-                RICHIEDI PREVENTIVO
-             </Button>
+             <Link to="/fotogallery">
+               <Button variant="primary" className="!px-10 !py-4 text-sm w-full sm:w-auto">
+                  I NOSTRI PROGETTI &rarr;
+               </Button>
+             </Link>
+             <Link to="/contatti">
+               <Button variant="outline" className="!px-10 !py-4 text-sm w-full sm:w-auto">
+                  RICHIEDI PREVENTIVO
+               </Button>
+             </Link>
           </div>
         </div>
       </div>
 
       {/* Scroll Down Hint */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 animate-bounce">
+      <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/50 animate-bounce hidden md:flex">
          <span className="text-[10px] uppercase tracking-widest">Scroll</span>
          <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent"></div>
       </div>

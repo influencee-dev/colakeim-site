@@ -5,7 +5,7 @@ import { ImageGallery } from '../components/ui/ImageGallery';
 
 const ServiceCard = ({ title, desc, img }: { title: string, desc: string, img: string }) => (
     <div className="bg-white border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition-all duration-500">
-        <div className="h-72 overflow-hidden relative">
+        <div className="h-80 overflow-hidden relative">
             <img src={img} alt={title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
         </div>
@@ -27,71 +27,71 @@ export const ServicesPage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen pt-20">
         
         {/* Header Hero */}
-        <div className="bg-neutral-900 pt-32 pb-24 px-6 text-center">
+        <div className="bg-neutral-900 pt-24 pb-20 px-6 text-center">
             <div className="max-w-4xl mx-auto">
                 <span className="text-brand-red text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Cosa Facciamo</span>
-                <h1 className="font-serif text-5xl md:text-7xl text-white mb-8">Soluzioni di Lusso su Misura</h1>
+                <h1 className="font-serif text-5xl md:text-7xl text-white mb-8 leading-tight">Servizi Edili d'Eccellenza</h1>
                 <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed">
-                   Dall'idea al cantiere finito: CO LAKE IM trasforma i vostri spazi con maestria artigianale e design contemporaneo.
+                   Dall'idea al cantiere finito: CO LAKE IM trasforma i vostri spazi con maestria artigianale e soluzioni tecnologiche innovative.
                 </p>
             </div>
         </div>
 
-        {/* Main Services Grid */}
+        {/* 4 Main Services Grid */}
         <section className="max-w-7xl mx-auto px-6 py-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <ServiceCard 
                     title="Ristrutturazioni interne"
-                    desc="Progetti chiavi in mano per bagni, cucine, interi appartamenti e locali commerciali. Ci occupiamo di ogni fase, dalla demolizione alle pulizie finali."
+                    desc="Bagni, cucine, appartamenti e locali commerciali chiavi in mano. Gestiamo l'intero processo per garantirti un risultato perfetto senza stress."
                     img="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
                 />
                 <ServiceCard 
                     title="Cartongesso & controsoffitti"
-                    desc="Soluzioni architettoniche innovative per dividere gli spazi, creare giochi di luce e valorizzare ogni ambiente con precisione millimetrica."
+                    desc="Soluzioni su misura per dividere, illuminare e valorizzare gli spazi. Creiamo volumi architettonici che trasformano l'estetica degli ambienti."
                     img="https://images.unsplash.com/photo-1594422634611-29438cb2c8e1?auto=format&fit=crop&w=800&q=80"
                 />
                 <ServiceCard 
                     title="Pavimenti e rivestimenti"
-                    desc="Specialisti in resine continue, posa parquet di pregio, piastrelle in gres porcellanato e superfici decorative d'avanguardia."
+                    desc="Resina, parquet, piastrelle e superfici decorative. Selezioniamo solo i migliori materiali per superfici durature e di alto design."
                     img="https://images.unsplash.com/photo-1516455590571-fb25f8569456?auto=format&fit=crop&w=800&q=80"
                 />
                 <ServiceCard 
                     title="Effetti decorativi e finiture"
-                    desc="Pareti moderne e texture materiche (effetto cemento, pietra spaccata) per chi cerca un design distintivo e contemporaneo."
+                    desc="Pareti moderne, texture materiche e design contemporaneo. Diamo carattere ai tuoi muri con tecniche artigianali d'avanguardia."
                     img="https://images.unsplash.com/photo-1615529123000-ad69299ebf47?auto=format&fit=crop&w=800&q=80"
                 />
             </div>
         </section>
 
         {/* Before/After Gallery */}
-        <section className="bg-gray-50 py-24 px-6">
+        <section className="bg-gray-50 py-24 px-6 border-y border-gray-100">
             <div className="max-w-7xl mx-auto">
-                <div className="mb-12 text-center md:text-left">
-                    <h2 className="font-serif text-4xl text-gray-900 mb-4">Evoluzioni: Prima & Dopo</h2>
-                    <p className="text-gray-600 font-light">Alcune delle nostre realizzazioni più significative catturate durante il processo di trasformazione.</p>
+                <div className="mb-12 text-center">
+                    <span className="text-gray-400 text-xs font-bold tracking-widest uppercase mb-4 block">Portfolio</span>
+                    <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-4">Realizzazioni: Prima & Dopo</h2>
+                    <p className="text-gray-600 font-light max-w-xl mx-auto">La prova tangibile della nostra capacità di trasformare spazi obsoleti in ambienti moderni e accoglienti.</p>
                 </div>
-                <ImageGallery images={beforeAfterImages} title="Trasformazioni CO LAKE IM" />
+                <ImageGallery images={beforeAfterImages} />
             </div>
         </section>
 
         {/* Experience Row & CTA */}
-        <section className="bg-neutral-900 py-24 px-6">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-                <div className="lg:max-w-2xl">
-                    <h2 className="font-serif text-3xl md:text-4xl text-white mb-6 leading-tight">
-                        Competenza residenziale e professionale per ogni esigenza.
+        <section className="bg-neutral-900 py-24 md:py-32 px-6">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+                <div className="lg:max-w-3xl">
+                    <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 leading-tight">
+                        Soluzioni su misura per il tuo business e la tua casa.
                     </h2>
                     <p className="text-gray-400 text-lg font-light leading-relaxed">
-                        Eseguiamo lavorazioni su misura per <span className="text-white">appartamenti, ville, locali commerciali, B&B e hotel</span>. 
-                        Che si tratti della tua casa privata o del tuo spazio business, offriamo soluzioni tecniche ed estetiche studiate per massimizzare il valore del tuo immobile.
+                        Co La Ke esegue lavorazioni su misura su <span className="text-white">appartamenti, ville, locali commerciali, B&B e hotel</span>, offrendo soluzioni tecniche ed estetiche studiate sia per ambienti residenziali che professionali. Valorizziamo il tuo investimento immobiliare con qualità garantita.
                     </p>
                 </div>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 w-full lg:w-auto text-center">
                     <Link to="/contatti">
-                        <Button className="!py-6 !px-12 text-sm shadow-2xl">RICHIEDI UNA CONSULENZA &rarr;</Button>
+                        <Button className="!py-6 !px-16 text-sm shadow-2xl w-full sm:w-auto">PARLA CON UN ESPERTO &rarr;</Button>
                     </Link>
                 </div>
             </div>
