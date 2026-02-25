@@ -4,6 +4,7 @@ import { ImageGallery } from '../components/ui/ImageGallery';
 export const GalleryPage: React.FC = () => {
   // Full list of client images cli1 to cli15 with correct .jpeg extension
   const portfolioImages = [
+    "/cli.jpeg",
     "/cli1.jpeg",
     "/cli2.jpeg",
     "/cli3.jpeg",
@@ -19,6 +20,7 @@ export const GalleryPage: React.FC = () => {
     "/cli14.jpeg",
     "/cli15.jpeg",
     "/cli10.jpeg"
+    "/cli16.jpeg"
   ];
 
   return (
