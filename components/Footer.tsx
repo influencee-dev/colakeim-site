@@ -54,9 +54,9 @@ export const Footer: React.FC = () => {
           <div>
              <h4 className="text-white text-xs font-bold tracking-widest uppercase mb-6">Contatti</h4>
              <ul className="space-y-4 text-sm font-light">
-                <li>Como, Italia</li>
-                <li>info@colakeim.com</li>
-                <li>+39 031 000 0000</li>
+                <li>Como via Manzoni nr 18</li>
+                <li>Colakeimsrl@gmail.com</li>
+                <li>+39 347 570 4421</li>
                 <li className="pt-2">
                    <Link to="/contatti">
                       <span className="text-brand-red font-bold hover:underline">RICHIEDI PREVENTIVO &rarr;</span>
