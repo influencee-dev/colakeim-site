@@ -20,7 +20,6 @@ export const GalleryPage: React.FC = () => {
     "/cli14.jpeg",
     "/cli15.jpeg",
     "/cli10.jpeg"
-    "/cli16.jpeg"
   ];
 
   return (
